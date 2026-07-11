@@ -79,29 +79,29 @@ export const mockAccommodation: Accommodation = {
   images: [
     {
       id: "img-001",
-      url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
-      alt: "Piscina principal com vista para o complexo",
+      url: "/images/termal-pool.png",
+      alt: "Piscina térmica principal do complexo Lacqua diRoma",
       isPrimary: true,
     },
     {
       id: "img-002",
-      url: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80",
-      alt: "Área de lazer com piscina térmica",
+      url: "/images/family-area.png",
+      alt: "Área de lazer familiar com múltiplas piscinas termais",
     },
     {
       id: "img-003",
-      url: "https://images.unsplash.com/photo-1578884454284-8fb1d27f1806?w=400&q=80",
-      alt: "Quarto com vista para o complexo",
+      url: "/images/apartment.png",
+      alt: "Apartamento de luxo com vista para o complexo",
     },
     {
       id: "img-004",
-      url: "https://images.unsplash.com/photo-1561339033-670ddcfe6e0c?w=400&q=80",
-      alt: "Spa e área de bem-estar",
+      url: "/images/spa.png",
+      alt: "Spa e área de bem-estar com tratamentos premium",
     },
     {
       id: "img-005",
-      url: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=400&q=80",
-      alt: "Restaurante com culinária gourmet",
+      url: "/images/restaurant.png",
+      alt: "Restaurante gourmet com buffet e culinária local",
     },
   ],
   amenities: [

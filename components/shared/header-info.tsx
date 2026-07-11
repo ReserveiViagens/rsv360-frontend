@@ -29,7 +29,7 @@ export function HeaderInfo({ accommodation }: HeaderInfoProps) {
 
       <div className="flex flex-wrap gap-2">
         <Badge icon={<Shield size={16} />} label="Anfitrião verificado" />
-        <Badge icon={<Star size={16} />} label="Resevei Viagens" />
+        <Badge icon={<Star size={16} />} label="Reservei Viagens" />
       </div>
     </div>
   );

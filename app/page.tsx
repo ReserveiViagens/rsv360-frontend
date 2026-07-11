@@ -116,16 +116,16 @@ export default function PackagePage() {
         </header>
 
         {/* Main Content */}
-        <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
-          {/* Hero - Galeria */}
-          <section className="mb-6 md:mb-8">
-            <GallerySection images={mockAccommodation.images} />
-          </section>
-
-          {/* Conteúdo Principal */}
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
+          {/* Conteúdo Principal com Galeria + Booking Card */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
-            {/* Coluna Esquerda - Conteúdo */}
+            {/* Coluna Esquerda - Galeria + Conteúdo */}
             <div className="lg:col-span-2 space-y-6 md:space-y-8">
+              {/* Hero - Galeria */}
+              <section>
+                <GallerySection images={mockAccommodation.images} />
+              </section>
+
               {/* Header Info */}
               <HeaderInfo accommodation={mockAccommodation} />
 
@@ -148,7 +148,7 @@ export default function PackagePage() {
               <FAQSection faqs={mockAccommodation.faqs} />
             </div>
 
-            {/* Coluna Direita - Booking Card (Desktop) */}
+            {/* Coluna Direita - Booking Card (Desktop Sticky) */}
             <div className="hidden lg:block">
               <BookingCard accommodation={mockAccommodation} />
             </div>

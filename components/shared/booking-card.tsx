@@ -50,7 +50,7 @@ export function BookingCard({
 
   const containerClass = isFixedMobile
     ? "fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 rounded-t-lg shadow-lg p-4 z-40"
-    : "sticky top-6 border border-gray-200 rounded-lg p-6 bg-white shadow-sm";
+    : "sticky top-4 border border-gray-200 rounded-xl p-6 bg-white shadow-md";
 
   return (
     <div className={containerClass}>
@@ -131,8 +131,8 @@ export function BookingCard({
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className={`w-full py-3 bg-[#ff9900] hover:bg-[#ff8c00] text-white font-semibold rounded-lg transition-colors inline-block text-center ${
-            !totalPrice ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
+          className={`w-full py-3 bg-[#f97316] hover:bg-[#ea580c] active:bg-[#c2410c] text-white font-bold rounded-lg transition-all duration-200 inline-block text-center text-base shadow-md hover:shadow-lg ${
+            !totalPrice ? "opacity-40 cursor-not-allowed pointer-events-none" : ""
           }`}
         >
           Reservar pelo WhatsApp
