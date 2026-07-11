@@ -15,7 +15,7 @@
 
 ## Fase 1 — Landing page pública do pacote (3 imagens)
 
-- [ ] Executado no v0
+- [x] Executado no v0
 - Prompt: `prompts/01-landing-page.md`
 
 **Imagens:**
