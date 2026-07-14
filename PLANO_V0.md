@@ -27,7 +27,7 @@
 
 ## Fase 2 — Wizard de criação de anúncio, 3 etapas (20 imagens)
 
-- [ ] Executado no v0
+- [x] Executado no v0
 - Prompt: `prompts/02-wizard-criacao-anuncio.md`
 - Obs.: `download_(14).png` foi descartada (captura vazia/cinza) — o lote fecha em exatamente 20.
 
