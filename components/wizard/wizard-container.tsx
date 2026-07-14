@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { useWizard } from '@/lib/contexts/wizard-context';
 import { ProgressBar } from './progress-bar';
 import { StepNavigation } from './step-navigation';
@@ -8,7 +9,17 @@ import { Step2 } from './step-2';
 import { Step3 } from './step-3';
 
 export function WizardContainer() {
+  const router = useRouter();
   const { currentStep, error, nextStep, previousStep } = useWizard();
+
+  const handleNextStep = () => {
+    if (currentStep === 3) {
+      // Na última etapa, navega para review em vez de avançar
+      router.push('/wizard/review');
+      return true;
+    }
+    return nextStep();
+  };
 
   const renderStep = () => {
     switch (currentStep) {
@@ -64,7 +75,7 @@ export function WizardContainer() {
           currentStep={currentStep}
           totalSteps={3}
           onPrevious={previousStep}
-          onNext={nextStep}
+          onNext={handleNextStep}
           isLastStep={currentStep === 3}
           nextLabel={currentStep === 1 ? 'Avançar' : currentStep === 2 ? 'Avançar' : 'Revisar e Publicar'}
         />

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { Percent } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,6 +13,7 @@ import { reservationTypes } from '@/lib/wizard-data';
 import type { ReservationType } from '@/lib/types/wizard';
 
 export function Step3() {
+  const router = useRouter();
   const { formData, updateStep } = useWizard();
   const step3 = formData.step3;
 
