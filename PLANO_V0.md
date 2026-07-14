@@ -57,7 +57,7 @@
 
 ## Fase 3 — Resumo/revisão do anúncio (3 imagens)
 
-- [ ] Executado no v0 (MESMA conversa da Fase 2, mensagem seguinte)
+- [x] Executado no v0 (MESMA conversa da Fase 2, mensagem seguinte)
 - Prompt: `prompts/03-resumo-anuncio.md`
 
 **Imagens:**
